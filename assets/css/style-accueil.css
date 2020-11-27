@@ -54,6 +54,10 @@ body {
     height: 100%;
     width: 60%;
 }
+.position-i{
+    position: relative;
+    z-index: 30;
+}
 
 .bg-opacity {
     z-index: 2;
