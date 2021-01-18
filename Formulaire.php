@@ -38,21 +38,21 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active zoom">
-                        <a class="nav-link text-white text-change ml-md-5" href="Accueil(sondage).html">Sondage<span
+                        <a class="nav-link text-white text-change ml-md-5" href="Accueil(sondage).php">Sondage<span
                                 class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item zoom">
-                        <a class="nav-link text-white text-change ml-md-5" href="Formulaire.html">On Parle ?</a>
+                        <a class="nav-link text-white text-change ml-md-5" href="Formulaire.php">On Parle ?</a>
                     </li>
                     <li class="nav-item zoom">
-                        <a class="nav-link text-white text-change ml-md-5" href="Derniers-Sondages.html">Derniers
+                        <a class="nav-link text-white text-change ml-md-5" href="Derniers-Sondages.php">Derniers
                             Sondages</a>
                     </li>
                     <li class="nav-item zoom">
-                        <a class="nav-link text-white text-change ml-md-5" href="Connexion.html">Connexion</a>
+                        <a class="nav-link text-white text-change ml-md-5" href="Connexion.php">Connexion</a>
                     </li>
                     <li class="nav-item zoom">
-                        <a class="nav-link text-white text-change ml-md-5" href="Inscription.html">Inscris toi ?</a>
+                        <a class="nav-link text-white text-change ml-md-5" href="Inscription.php">Inscris toi ?</a>
                     </li>
                     <li class="nav-item mt-3 ml-5">
                         <div class="d-flex justify-content-center">

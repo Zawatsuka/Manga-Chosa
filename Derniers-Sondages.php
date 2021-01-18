@@ -10,9 +10,6 @@
     <!-- le style css  -->
     <link rel="stylesheet" href="assets/css/style-accueil.css">
     <link rel="stylesheet" href="assets/css/animation.css">
-    <link rel="stylesheet" href="assets/css/style-form.css">
-    <link rel="stylesheet" href="assets/css/style-connexion.css">
-    <link rel="stylesheet" href="assets/css/inscript.css">
     <!-- la police -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
@@ -40,21 +37,21 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active zoom">
-                        <a class="nav-link text-white text-change ml-md-5" href="Accueil(sondage).html">Sondage<span
+                        <a class="nav-link text-white text-change ml-md-5" href="Accueil(sondage).php">Sondage<span
                                 class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item zoom">
-                        <a class="nav-link text-white text-change ml-md-5" href="Formulaire.html">On Parle ?</a>
+                        <a class="nav-link text-white text-change ml-md-5" href="Formulaire.php">On Parle ?</a>
                     </li>
                     <li class="nav-item zoom">
-                        <a class="nav-link text-white text-change ml-md-5" href="Derniers-Sondages.html">Derniers
+                        <a class="nav-link text-white text-change ml-md-5" href="Derniers-Sondages.php">Derniers
                             Sondages</a>
                     </li>
                     <li class="nav-item zoom">
-                        <a class="nav-link text-white text-change ml-md-5" href="Connexion.html">Connexion</a>
+                        <a class="nav-link text-white text-change ml-md-5" href="Connexion.php">Connexion</a>
                     </li>
                     <li class="nav-item zoom">
-                        <a class="nav-link text-white text-change ml-md-5" href="Inscription.html">Inscris toi ?</a>
+                        <a class="nav-link text-white text-change ml-md-5" href="Inscription.php">Inscris toi ?</a>
                     </li>
                     <li class="nav-item mt-3 ml-5">
                         <div class="d-flex justify-content-center">
@@ -69,66 +66,85 @@
     </header>
     <main>
         <!-- partie gauche du site -->
-        <div class="container-fluid fadeInLeft">
+        <div class="dropdown d-block d-sm-block d-md-none fadeInLeft p-3 position-i">
+            <button class="btn btn-secondary dropdown-toggle p-3 text-change" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Themes
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item text-change" href="#">Shonen</a>
+                <a class="dropdown-item text-change" href="#">Shojo</a>
+                <a class="dropdown-item text-change" href="#">Seinen</a>
+                <a class="dropdown-item text-change" href="#">Ecchi</a>
+            </div>
+        </div>
+        <div class="container-fluid">
             <!-- sondage -->
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-7 justify-content-center p-5">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-6 col-12 col-sm-12">
-                                <div class="d-flex flex-column">
-                                    <div class="p-2"><input type="text" class="p-3 input-inscript zoom" size="30"
-                                            placeholder="ton adresse mail..."></div>
-                                    <div class="p-2"><input type="password" class="p-3 input-inscript zoom" size="30"
-                                            placeholder="mot de passe"></div>
-                                    <div class="p-2"><input type="password" class="p-3 input-inscript zoom" size="30"
-                                            placeholder="Retape le on sait jamais"></div>
-                                    <div class="d-flex flex-row ml-2 mt-3">
-                                        <div><input type="radio" class="ml-3 border-change mt-3 zoom"></div>
-                                        <div>
-                                            <p class="ml-3 text-change">Homme</p>
-                                        </div>
-                                        <div><input type="radio" class="ml-3 border-change mt-3 zoom"></div>
-                                        <div>
-                                            <p class="ml-3 text-change">Femme</p>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex flex-row ml-2 ">
-                                        <div><input type="radio" class="ml-3 border-change mt-3 zoom"></div>
-                                        <div>
-                                            <p class="ml-3 text-change">Autre</p>
+
+            <div class="row ">
+                <div class="col-12 col-sm-12 col-md-7">
+                    <div class=" mt-3 align-items-center fadeInLeft">
+                        <h2 class="p-2">Sondages du 23/11/2020</h2>
+                        <div class="d-flex flex-row p-3">
+                            <div>
+                                <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                    <img src="assets/img/luffy.png" alt="Monkey D. Luffy"
+                                        class="ml-2 img-fluid index-img zoom">
+                                </a>
+                                <div class="collapse" id="collapseExample">
+                                    <div class="card card-body">
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark"
+                                                role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                                                aria-valuemax="100" style="width: 70%"> 70%</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-12 col-sm-12">
-                                <div class="d-flex flex-column">
-                                    <div class="p-2"><input type="text" class="p-3 input-inscript zoom" size="30"
-                                            placeholder="ton pseudo"></div>
-                                    <div>
-                                        <p class="text-change ml-3 mt-3">Ton Anniversaire</p>
-                                    </div>
-                                    <div><input class="p-3 birthday ml-2 zoom" size="30" placeholder="Date/Mois/Année"></div>
-                                    <div class="d-flex">
-                                        <input type="checkbox" id="scales" name="scales" checked class="ml-3 mt-4 ">
-                                        <label for="scales" class="text-check d-none d-sm-none d-md-block mt-3 ml-2 ">On t'envoi des mails de temps en temps
-                                            ?</label>
-                                            <label for="scales" class="text-checkto d-block d-sm-block d-md-none mt-4 ml-2">On t'envoi des mails de temps en temps
-                                                ?</label>
-                                    </div>
-                                    <div class="button-margin zoom ">
-                                        <button class="px-5 py-4 m-2 button-connect text-change"> Crée un compte </button>
+                            <img src="assets/img/versus.svg" alt="Versus" width="65" class="img-fluid p-3 align-center">
+                            <div>
+                                <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                    <img src="assets/img/Ichigo.png" alt="Ichigo Kurosaki"
+                                        class="ml-2md- img-fluid index-img zoom">
+                                </a>
+                                <div class="collapse" id="collapseExample">
+                                    <div class="card card-body">
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark"
+                                                role="progressbar" aria-valuenow="30" aria-valuemin="0"
+                                                aria-valuemax="100" style="width: 30%"> 30%</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
+
+
+
+
                 <!-- partie droite du site-->
                 <div class="col-5 d-none d-sm-none d-md-block bg-right slideInRight">
-                    <div class="d-flex justify-content-center marg-img-connect">
-                        <img src="assets/img/chosachan2.png" class="img-fluid" width="250" alt="">
+                    <!-- liste des differents genres -->
+                    <ul>
+                        <a href="#">
+                            <li class="mt-5 center-text zoom">Shonen</li>
+                        </a>
+                        <a href="#">
+                            <li class="mt-5 center-text zoom">Shojo</li>
+                        </a>
+                        <a href="#">
+                            <li class="mt-5 center-text zoom">Seinen</li>
+                        </a>
+                        <a href="#">
+                            <li class="mt-5 center-text zoom">Ecchi</li>
+                        </a>
+                    </ul>
+                    <div class="d-flex justify-content-center">
+                        <img src="assets/img/chosachan2.png" class="img-fluid mt-5" width="250" alt="">
                     </div>
                 </div>
             </div>
@@ -137,11 +153,9 @@
     <footer class="container-fluid slideInRight">
         <div class="row bg-footer">
             <!-- partie gauche du footer -->
-            <h5 class="p-3 text-change text-light d-block d-sm-block d-md-none">Hésite pas à nous retrouver sur les
-                réseaux !</h5>
+            <h5 class="p-3 text-change text-light d-block d-sm-block d-md-none">Hésite pas à nous retrouver sur les réseaux !</h5>
             <div class="col-6 text-footer">
-                <h5 class="p-3 text-change text-light d-none d-sm-none d-md-block">Hésite pas à nous retrouver sur les
-                    réseaux !</h5>
+                <h5 class="p-3 text-change text-light d-none d-sm-none d-md-block">Hésite pas à nous retrouver sur les réseaux !</h5>
                 <div class="d-flex align-item-center mt-4">
                     <img src="assets/img/facebook.png" class="" width="30" height="30" alt="">
                     <a href="#" class="text-footer">
@@ -178,7 +192,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.0.2/cleave.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/animation.js"></script>
 </body>
