@@ -4,6 +4,7 @@ body {
     height: 100%;
     width: 100%;
     background-color: rgb(235, 235, 235);
+    font-family: 'Oswald', sans-serif;
 }
 
 
@@ -29,7 +30,6 @@ body {
 
     .text-change {
         font-size: 18px;
-        font-family: 'Oswald', sans-serif;
     }
 
     .nav-burger {
@@ -78,18 +78,15 @@ body {
   }
   .title-comment{
     font-size: 35px;
-    font-family: 'Oswald', sans-serif;
     text-decoration: underline;
   }
   .text-comment {
     font-size: 25px;
-    font-family: 'Oswald', sans-serif;
     text-decoration: underline;
 }
 .comment{
     margin-left: 11%;
     font-size: 22px;
-    font-family: 'Oswald', sans-serif;
 }
 .sizingRight {
     height: 100%;
@@ -104,7 +101,6 @@ body {
 .center-text{
     color: white;
     font-size: 40px;
-    font-family: 'Oswald', sans-serif;
     text-align: center;
     list-style: none;
 }

@@ -1,56 +1,48 @@
-<div class="container-fluid fadeInLeft">
-            <!-- sondage -->
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-7 justify-content-center p-5">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-6 col-12 col-sm-12">
-                                <div class="d-flex flex-column">
-                                    <div class="p-2"><input type="text" class="p-3 input-inscript zoom" size="30"
-                                            placeholder="ton adresse mail..."></div>
-                                    <div class="p-2"><input type="password" class="p-3 input-inscript zoom" size="30"
-                                            placeholder="mot de passe"></div>
-                                    <div class="p-2"><input type="password" class="p-3 input-inscript zoom" size="30"
-                                            placeholder="Retape le on sait jamais"></div>
-                                    <div class="d-flex flex-row ml-2 mt-3">
-                                        <div><input type="radio" class="ml-3 border-change mt-3 zoom"></div>
-                                        <div>
-                                            <p class="ml-3 text-change">Homme</p>
-                                        </div>
-                                        <div><input type="radio" class="ml-3 border-change mt-3 zoom"></div>
-                                        <div>
-                                            <p class="ml-3 text-change">Femme</p>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex flex-row ml-2 ">
-                                        <div><input type="radio" class="ml-3 border-change mt-3 zoom"></div>
-                                        <div>
-                                            <p class="ml-3 text-change">Autre</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-12 col-sm-12">
-                                <div class="d-flex flex-column">
-                                    <div class="p-2"><input type="text" class="p-3 input-inscript zoom" size="30"
-                                            placeholder="ton pseudo"></div>
-                                    <div>
-                                        <p class="text-change ml-3 mt-3">Ton Anniversaire</p>
-                                    </div>
-                                    <div><input class="p-3 birthday ml-2 zoom" size="30" placeholder="Date/Mois/Année"></div>
-                                    <div class="d-flex">
-                                        <input type="checkbox" id="scales" name="scales" checked class="ml-3 mt-4 ">
-                                        <label for="scales" class="text-check d-none d-sm-none d-md-block mt-3 ml-2 ">On t'envoi des mails de temps en temps
-                                            ?</label>
-                                            <label for="scales" class="text-checkto d-block d-sm-block d-md-none mt-4 ml-2">On t'envoi des mails de temps en temps
-                                                ?</label>
-                                    </div>
-                                    <div class="button-margin zoom ">
-                                        <button class="px-5 py-4 m-2 button-connect text-change"> Crée un compte </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+ <!-- sondage -->
+ <form method="POST">
+     <div class="container-fluid">
+         <h3 class="mt-5 ml-5">Inscris Toi ?</h3>
+         <div class="row">
+             <div class="col-6">
+                 <div class="container">
+                     <div class="row">
+                         <div class="col-12">
+                             <div class="container">
+                                 <div class="row">
+                                     <div class="col-12">
+                                         <p class="mt-2">Ton Adresse Mail</p>
+                                         <input type="text" class="p-3  input-inscript" size="40" placeholder="Adresse Mail">
+                                         <p class="mt-2">Ton Mot de passe</p>
+                                         <input type="text" class="p-3  input-inscript" size="40" placeholder="Mot De Passe">
+                                         <p class="mt-2">Retape le on sait jamais !</p>
+                                         <input type="text" class="p-3  input-inscript" size="40" 
+                                             placeholder="Retape le on sait jamais !">
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="container mt-4">
+                                 <div class="row">
+                                     <div class="col-12">
+                                         <input type="radio" class="p-3" id="male" name="gender" value="male">
+                                         <label for="male">Homme</label><br>
+                                         <input type="radio" class="p-3" id="female" name="gender" value="female">
+                                         <label for="female">Femme</label><br>
+                                         <input type="radio" class="p-3" id="other" name="gender" value="other">
+                                         <label for="other">Autre</label>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-6">
+                 <input type="text" class="p-3 mt-5 input-inscript" size="40" placeholder="Ton Pseudo">
+                 <h3 class="mt-5">Ton Anniversaire</h3>
+                 <input type="text" class="p-3 mt-2 input-inscript" size="40" placeholder="Date/Mois/Année">
+                 <input type="submit" class="mt-5 button-speak p-3" value="Creer son compte">
+             </div>
 
-                    </div>
-                </div>
+         </div>
+     </div>
+ </form>

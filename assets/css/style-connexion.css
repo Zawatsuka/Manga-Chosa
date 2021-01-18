@@ -1,12 +1,18 @@
+html,
+body {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+    font-family: 'Oswald', sans-serif;
+}
 .connexion-form{
     border-style: none;
-    font-family: 'Oswald', sans-serif;
     border-radius: 15px;
     border-style: none;
     background-color: rgb(214, 214, 214);
 }
 .color-link{
-    font-family: 'Oswald', sans-serif;
     color: rgb(173, 173, 173);
 }
 .margin-link{
