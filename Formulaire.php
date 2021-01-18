@@ -57,7 +57,6 @@
                 </div>
             </div>
         </div>
-
         <?php include('template\footer.php') ?>
     </main>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

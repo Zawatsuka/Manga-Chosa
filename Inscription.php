@@ -33,7 +33,16 @@
         <div class="container-fluid fadeInLeft">
             <div class="row">
                 <div class="col-7">
-                <?php include('template/formInscription.php'); ?>
+                <?php 
+                        //si il n'y a pas d'erreurs et que le formulaire est envoyer afficher les valeurs
+                        // sinon j'affiche le formulaire 
+                            
+                        if(!empty($error) && $_SERVER['REQUEST_METHOD']=='POST'){
+                            include('template/goodInscription.php');
+                        }else{
+                            include('template/formInscription.php');
+                        }
+                        ?>
                 </div>
                 <!-- partie droite du site-->
                 <div class="col-5 d-none d-sm-none d-md-block bg-right slideInRight">
