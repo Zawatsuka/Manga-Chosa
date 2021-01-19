@@ -27,7 +27,7 @@
                         <a class="nav-link text-white text-change ml-md-5" href="Connexion.php">Connexion</a>
                     </li>
                     <li class="nav-item zoom">
-                        <a class="nav-link text-white text-change ml-md-5" href="Inscription.php">Inscris toi ?</a>
+                        <a class="nav-link text-white text-change ml-md-5" href="/controllers/userRegisterCtrl.php">Inscris toi ?</a>
                     </li>
                     <li class="nav-item mt-3 ml-5">
                         <div class="d-flex justify-content-center">

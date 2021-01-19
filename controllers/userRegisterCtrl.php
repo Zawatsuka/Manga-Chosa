@@ -87,5 +87,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     }else{
         $errorsArray['birthDate_error'] = 'Le champ n\'est pas rempli';
     }
+    if(empty($errorsArray) ){
+        header('location: /views/page/goodInscription.php');
+    }
 }
+
+include(dirname(__FILE__).'/../views/page/inscription.php');
+
 ?> 

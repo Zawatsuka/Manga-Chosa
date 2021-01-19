@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
         rel="stylesheet">
     <!-- favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/Chosa Chan.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/img/Chosa Chan.ico">
 
     <title>Manga Chōsa</title>
 </head>
