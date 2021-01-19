@@ -26,7 +26,7 @@
 <body>
     <header>
         <!-- nav bar du site  -->
-        <?php include('template\navbar.php')?>
+        <?php include('views\template\navbar.php')?>
     </header>
     <main>
         <!-- partie gauche du site -->
@@ -36,11 +36,11 @@
                 <?php 
                         //si il n'y a pas d'erreurs et que le formulaire est envoyer afficher les valeurs
                         // sinon j'affiche le formulaire 
-                            
+                            include('views\template\nettoyage.php');
                         if(!empty($error) && $_SERVER['REQUEST_METHOD']=='POST'){
-                            include('template/goodInscription.php');
+                            include('views\template\goodInscription.php');
                         }else{
-                            include('template/formInscription.php');
+                            include('views\template\formInscription.php');
                         }
                         ?>
                 </div>
@@ -53,7 +53,7 @@
             </div>
         </div>
     </main>
-        <?php include('template\footer.php') ?>
+        <?php include('views\template\footer.php') ?>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
