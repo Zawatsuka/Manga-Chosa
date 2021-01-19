@@ -36,11 +36,11 @@
                 <?php 
                         //si il n'y a pas d'erreurs et que le formulaire est envoyer afficher les valeurs
                         // sinon j'affiche le formulaire 
-                            include('Controller\nettoyage.php');
+                        include('Controller\nettoyage.php');
                         if(empty($error) && $_SERVER['REQUEST_METHOD']=='POST'){
                             include('views\template\goodInscription.php');
                         }else{
-                            include('views\template\formInscription.php');
+                            header('location : http://manga-chosa.php/goodInscription.php ');
                         }
                         ?>
                 </div>
