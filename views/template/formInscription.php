@@ -48,7 +48,7 @@
                                             </div>
 
                                          <!-- input du retappage de mot de passe  -->
-                                         <!-- pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$" -->
+                                         
                                          <p class="mt-2">Retape le on sait jamais !</p>
                                          <input type="password"
                                                 class="p-3 m-0 input-inscript" 
@@ -56,11 +56,14 @@
                                                 placeholder="Retape le on sait jamais !" 
                                                 name="rePassword"  
                                                 id="rePass" 
-                                                <?= isset($errorsArray['rePassword_error']) ? 'is-invalid' : ''?> >
+                                                <?= isset($errorsArray['rePassword_error']) ? 'is-invalid' : ''?> 
+                                                pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$"
+                                                required>
                                                 <button class="button-speak m-0" onclick="rmp()"><img src="assets/img/oeil.svg" class="img-fluid" width="30"  alt="oeil"> </button>
                                             <p class="sizeMP text-danger"><?= $errorsArray['rePassword_error'] ?? ''?></p>
 
                                         <p class="mt-4"> Votre Civilité :</p>
+                                        <p class="sizeMP text-danger"><?= $errorsArray['gender_error'] ?? ''?> </p>
                                      </div>
                                  </div>
                              </div>
@@ -71,7 +74,7 @@
                                          <input type="radio" 
                                                 class="p-3" id="male" 
                                                 name="gender" 
-                                                value="male" required>
+                                                value="1" required>
                                          <label for="male">Homme</label><br>
 
                                          <!-- input radio de "femme"  -->
@@ -79,7 +82,7 @@
                                                 class="p-3" 
                                                 id="female" 
                                                 name="gender" 
-                                                value="female" required>
+                                                value="2" required>
                                          <label for="female">Femme</label><br>
 
                                          <!-- input radio de "autre"  -->
@@ -87,7 +90,7 @@
                                                 class="p-3" 
                                                 id="other" 
                                                 name="gender" 
-                                                value="other" required>
+                                                value="3" required>
                                          <label for="other">Autre</label>
                                      </div>
                                  </div>
@@ -111,15 +114,19 @@
                         <?= isset($errorsArray['pseudo_error']) ? 'is-invalid' : ''?>>
                     <p class="sizeMp text-danger"><?= $errorsArray['pseudo_error'] ?? ''?></p>
 
+                    <!-- pattern="(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[13-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})" 
+                        required> -->
                 <!-- input  de l'anniversaire  -->
                  <p class="mt-5">Ton Anniversaire</p> 
                  <input type="text" 
                         class="p-3 mt-2 input-inscript birthday" 
                         size="30" 
                         placeholder="Date/Mois/Année" 
-                        name="birthday" 
-                        pattern="(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[13-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})" 
-                        required>
+                        name="birthDate"
+                        <?= isset($errorsArray['birthDate_error']) ? 'is-invalid' : ''?>
+                        > 
+                        <p class="sizeMp text-danger"><?= $errorsArray['birthDate_error'] ?? ''?></p>      
+                        
                         
                  <input type="submit" class="mt-5 button-speak p-3 m-3" value="Creer son compte">
              </div>
