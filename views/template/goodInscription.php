@@ -7,7 +7,7 @@
           <li>Civilité : <?=$gender;?></li>
           <li>Votre Email : <?=$mail ?? 'Vous n\'avez rien mis'?></li>
           <li>Votre Mot de passe : <input type="password" value="<?=$password; ?>" disabled></li>
-          <li>Votre Anniversaire : <?= $birthday; ?></li>
+          <li>Votre Anniversaire : <?= $birthDate; ?></li>
 
       </ul>
     </div>
