@@ -32,6 +32,7 @@
                                             <div class="sizeMP">
                                                <p>Dans le mot de passe il doit y avoir...</p>
                                                 <ul>
+                                                    <li>Minimum 8 caracteres</li>
                                                     <li>Des lettres Minuscule et Majuscule </li>
                                                     <li>Des chiffres </li>
                                                     <li>Des caracteres speciaux(#?!@$ %^&*-)</li>
