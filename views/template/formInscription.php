@@ -34,7 +34,7 @@
                                                 <?= isset($errorsArray['password_error']) ? 'is-invalid' : ''?> 
                                                 pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$"
                                                 required>
-                                               <button class="button-speak m-0" onclick="mp()"><img src="assets/img/oeil.svg"  class="img-fluid" width="30"  alt="oeil"> </button>
+                                               <button class="button-speak m-0" onclick="mp()"><img src="../../assets/img/oeil.svg"  class="img-fluid" width="30"  alt="oeil"> </button>
 
                                             <div class="sizeMP">
                                             <p class="text-danger"><?= $errorsArray['password_error'] ?? ''?></p> 
@@ -59,7 +59,7 @@
                                                 <?= isset($errorsArray['rePassword_error']) ? 'is-invalid' : ''?> 
                                                 pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$"
                                                 required>
-                                                <button class="button-speak m-0" onclick="rmp()"><img src="assets/img/oeil.svg" class="img-fluid" width="30"  alt="oeil"> </button>
+                                                <button class="button-speak m-0" onclick="rmp()"><img src="../../assets/img/oeil.svg" class="img-fluid" width="30"  alt="oeil"> </button>
                                             <p class="sizeMP text-danger"><?= $errorsArray['rePassword_error'] ?? ''?></p>
 
                                         <p class="mt-4"> Votre Civilité :</p>
@@ -123,6 +123,7 @@
                         size="30" 
                         placeholder="Année/Mois/Date" 
                         name="birthDate"
+                        id="birthday"
                         <?= isset($errorsArray['birthDate_error']) ? 'is-invalid' : ''?>
                         pattern="^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$"
                         required> 
