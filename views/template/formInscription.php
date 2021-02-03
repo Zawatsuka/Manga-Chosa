@@ -121,7 +121,7 @@
                  <input type="text" 
                         class="p-3 mt-2 input-inscript birthday" 
                         size="30" 
-                        placeholder="Année/Mois/Date" 
+                        placeholder="Date/Mois/Année" 
                         name="birthDate"
                         id="birthday"
                         <?= isset($errorsArray['birthDate_error']) ? 'is-invalid' : ''?>
