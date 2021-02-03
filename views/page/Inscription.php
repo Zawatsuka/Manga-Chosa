@@ -4,7 +4,14 @@
         <div class="container-fluid fadeInLeft">
             <div class="row">
                 <div class="col-7">
-                <?php include(dirname(__FILE__).'/../template/formInscription.php') ?>
+                <?php 
+                include(dirname(__FILE__).'/../../controllers/userRegisterCtrl.php');
+                if($_SERVER['REQUEST_METHOD'] == 'POST' && empty($errors)){
+                    include('goodInscription.php');
+                    }else{
+                        include(dirname(__FILE__).'/../template/formInscription.php');  
+                    }
+                    ?>
                 </div>
                 <!-- partie droite du site-->
                 <div class="col-5 d-none d-sm-none d-md-block bg-right slideInRight">
