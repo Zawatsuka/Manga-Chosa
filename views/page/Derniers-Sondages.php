@@ -1,4 +1,4 @@
-<?php include(dirname(__FILE__).'/../template/header.php') ?>>
+<?php include(dirname(__FILE__).'/../template/header.php') ?>
     <main>
         <!-- partie gauche du site -->
         <div class="dropdown d-block d-sm-block d-md-none fadeInLeft p-3 position-i">
@@ -57,10 +57,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
                 <!-- partie droite du site-->
                 <div class="col-5 d-none d-sm-none d-md-block bg-right slideInRight">
                     <!-- liste des differents genres -->

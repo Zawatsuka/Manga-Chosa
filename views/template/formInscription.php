@@ -12,14 +12,15 @@
                                          <!-- input de l'email  -->
                                          
                                          <p class="mt-2">Ton Adresse Mail</p>
+                                         <!-- pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+[^0-9]"   -->
                                          <input type="email"
                                                 class="p-3 m-0 input-inscript"
                                                 size="30" 
                                                 placeholder="Adresse Mail" 
                                                 <?= isset($errorsArray['mail_error']) ? 'is-invalid' : ''?>
                                                 name="mail" 
-                                                pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"  
-                                                required >
+                                                
+                                                >
                                                 <p class="sizeMp text-danger"><?= $errorsArray['mail_error'] ?? ''?></p>
 
                                          <!-- input du mot de passe  -->
@@ -54,7 +55,7 @@
                                                 class="p-3 m-0 input-inscript" 
                                                 size="30" 
                                                 placeholder="Retape le on sait jamais !" 
-                                                name="rePassword"  
+                                                name="password"  
                                                 id="rePass" 
                                                 <?= isset($errorsArray['rePassword_error']) ? 'is-invalid' : ''?> 
                                                 pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$"

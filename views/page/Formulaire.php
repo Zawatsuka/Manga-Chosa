@@ -1,6 +1,6 @@
 <?php include(dirname(__FILE__).'/../template/header.php') ?>
 
-    <main>
+   <main>
         <!-- partie gauche du site -->
         <div class="container-fluid fadeInLeft">
             <!-- sondage -->
@@ -23,16 +23,10 @@
                         </div>
                     </form>
                 </div>
-                <!-- partie droite du site-->
-                <div class="col-5 d-none d-sm-none d-md-block bg-right slideInRight">
-                    <div class="d-flex justify-content-center marg-img ">
-                    <img src="../../assets/img/chosachan2.png" class="img-fluid mt-5" width="250" alt="">
-                    </div>
-                </div>
             </div>
         </div>
-        <?php include(dirname(__FILE__).'/../template/footer.php') ?>
     </main>
+    <?php include(dirname(__FILE__).'/../template/footer.php') ?>
 </body>
 
 </html>

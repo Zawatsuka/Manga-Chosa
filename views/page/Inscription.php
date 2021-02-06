@@ -7,9 +7,9 @@
                 <?php 
                 include(dirname(__FILE__).'/../../controllers/userRegisterCtrl.php');
                 if($_SERVER['REQUEST_METHOD'] == 'POST' && empty($errors)){
-                    include('goodInscription.php');
-                    }else{
-                        include(dirname(__FILE__).'/../template/formInscription.php');  
+                    include('../template/goodInscription.php');
+                }else{
+                    include(dirname(__FILE__).'/../template/formInscription.php');  
                     }
                     ?>
                 </div>

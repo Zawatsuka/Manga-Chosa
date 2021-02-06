@@ -1,9 +1,7 @@
-<?php include(dirname(__FILE__).'/../template/header.php') ?>
-  <main>
-    <!-- partie gauche du site -->
+   <!-- partie gauche du site -->
     <div class="container-fluid fadeInLeft">
       <div class="row">
-        <div class="col-7">
+        <div class="col-12 col-sm-12 col-md-7">
           <div class="container mt-3">
             <div class="text-center">
               <h2>Bienvenue <?= $pseudo ?></h2>
@@ -24,16 +22,9 @@
             </div>
           </div>
         </div>
-        <!-- partie droite du site-->
-        <div class="col-5 d-none d-sm-none d-md-block bg-right slideInRight">
-          <div class="d-flex justify-content-center marg-img-connect">
-            <img src="../../assets/img/chosachan2.png" class="img-fluid" width="250" alt="">
-          </div>
-        </div>
       </div>
     </div>
   </main>
-  <?php include(dirname(__FILE__).'/../template/footer.php') ?>
 </body>
 
 </html>
