@@ -12,15 +12,15 @@
                                          <!-- input de l'email  -->
                                          
                                          <p class="mt-2">Ton Adresse Mail</p>
-                                         <!-- pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+[^0-9]"   -->
+                                         
                                          <input type="email"
                                                 class="p-3 m-0 input-inscript"
                                                 size="30" 
                                                 placeholder="Adresse Mail" 
                                                 <?= isset($errorsArray['mail_error']) ? 'is-invalid' : ''?>
                                                 name="mail" 
-                                                
-                                                >
+                                                pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+[^0-9]"  
+                                                required>
                                                 <p class="sizeMp text-danger"><?= $errorsArray['mail_error'] ?? ''?></p>
 
                                          <!-- input du mot de passe  -->
@@ -75,7 +75,7 @@
                                          <input type="radio" 
                                                 class="p-3" id="male" 
                                                 name="gender" 
-                                                value="1" required>
+                                                value="Homme" required>
                                          <label for="male">Homme</label><br>
 
                                          <!-- input radio de "femme"  -->
@@ -83,7 +83,7 @@
                                                 class="p-3" 
                                                 id="female" 
                                                 name="gender" 
-                                                value="2" required>
+                                                value="Femme" required>
                                          <label for="female">Femme</label><br>
 
                                          <!-- input radio de "autre"  -->
@@ -91,7 +91,7 @@
                                                 class="p-3" 
                                                 id="other" 
                                                 name="gender" 
-                                                value="3" required>
+                                                value="Autre"required>
                                          <label for="other">Autre</label>
                                      </div>
                                  </div>

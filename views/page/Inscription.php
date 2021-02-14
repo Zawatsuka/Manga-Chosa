@@ -6,11 +6,11 @@
                 <div class="col-7">
                 <?php 
                 include(dirname(__FILE__).'/../../controllers/userRegisterCtrl.php');
-                if($_SERVER['REQUEST_METHOD'] == 'POST' && empty($errors)){
+                if($_SERVER['REQUEST_METHOD'] == 'POST' && empty($errorsArray)){
                     include('../template/goodInscription.php');
                 }else{
                     include(dirname(__FILE__).'/../template/formInscription.php');  
-                    }
+                }
                     ?>
                 </div>
                 <!-- partie droite du site-->

@@ -9,9 +9,9 @@
               <h4>Recapitulatif de votre inscription</h4>
               <p>Vous allez maintenant recevoir un mail de confirmation</p>
               <p>Civilité :
-                <?php if($gender==1){
+                <?php if($gender=='Homme'){
                       echo "Homme";
-                    }else if($gender==2){
+                    }else if($gender=='Femme'){
                       echo "Femme";
                     }else{
                       echo "Autre";
